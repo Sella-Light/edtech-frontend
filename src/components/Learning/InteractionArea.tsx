@@ -9,7 +9,7 @@ interface InteractionAreaProps {
     question: string;
     data: any;
     correctAnswer?: string;
-    lessonId: "1",
+    lessonId: string;
     xpReward: number;
   };
   onNext: () => void;

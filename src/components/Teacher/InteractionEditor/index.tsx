@@ -84,12 +84,12 @@ export const InteractionEditor: React.FC<InteractionEditorProps> = ({ onSave }) 
           <div className="flex gap-2 font-body">
             <Button 
               variant={!isPreview ? "primary" : "secondary"} 
-              size="sm" 
+              
               onClick={() => setIsPreview(false)}
             >Thiết lập</Button>
             <Button 
               variant={isPreview ? "primary" : "secondary"} 
-              size="sm" 
+               
               onClick={() => setIsPreview(true)}
             >Xem trước</Button>
           </div>
