@@ -25,7 +25,7 @@ export const OptionList: React.FC<OptionListProps> = ({
     <div className="space-y-3 p-4 bg-gray-50 rounded-lg border border-dashed border-gray-300">
       <div className="flex justify-between items-center">
         <span className="text-sm font-semibold text-gray-600">Danh sách đáp án</span>
-        <Button size="sm" variant="secondary" onClick={addOption}>+ Thêm lựa chọn</Button>
+        <Button variant="secondary" onClick={addOption}>+ Thêm lựa chọn</Button>
       </div>
       
       {options.map((opt, index) => (
