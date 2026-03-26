@@ -28,7 +28,9 @@ export const MOCK_SUBMISSIONS: Submission[] = [
     interactionId: 'int_002',
     answerContent: 'TypeScript giúp code an toàn hơn nhờ tính năng ép kiểu mạnh mẽ, giảm thiểu lỗi runtime.',
     status: GradingStatus.PENDING,
-    submittedAt: new Date().toISOString()
+    score: 0,        // Bổ sung thêm các trường còn thiếu để khớp với interface Submission
+    earnedXP: 0,
+    submittedAt: new Date() // ✅ Để nguyên đối tượng Date, không dùng toISOString()
   },
   {
     id: 'sub_002',
@@ -36,6 +38,8 @@ export const MOCK_SUBMISSIONS: Submission[] = [
     interactionId: 'int_002',
     answerContent: 'Tôi thấy nó hơi rắc rối lúc đầu nhưng về sau rất đáng để học.',
     status: GradingStatus.PENDING,
-    submittedAt: new Date(Date.now() - 3600000).toISOString()
+    score: 0,
+    earnedXP: 0,
+    submittedAt: new Date(Date.now() - 3600000) // ✅ Dùng Date chuẩn
   }
 ];
