@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Icon ứng dụng -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Learning Hub | Teacher Dashboard</title>
+    
+    <!-- Import Font chuẩn từ Design System 4.1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+      /* Reset cơ bản để đảm bảo giao diện đồng nhất */
+      body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      ĐIỂM GẮN ỨNG DỤNG: 
+      Cần khớp với document.getElementById('root') trong file main.tsx 
+    -->
+    <div id="root"></div>
+
+    <!-- 
+      KẾT NỐI VỚI LOGIC REACT:
+      Đường dẫn trỏ tới file entry point trong thư mục src
+    -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

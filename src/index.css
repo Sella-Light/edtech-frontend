@@ -1,0 +1,35 @@
+/* Thiết lập Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Global Styles dựa trên Design System 4.1 */
+@layer base {
+  :root {
+    --primary: #007BFF;
+    --secondary: #6C757D;
+    --success: #28A745;
+    --warning: #FFC107;
+    --error: #DC3545;
+    --background: #F8F9FA;
+    --text: #212529;
+  }
+
+  body {
+    @apply bg-[var(--background)] text-[var(--text)] font-sans;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1 { @apply text-[2rem] font-bold; }
+  h2 { @apply text-[1.5rem] font-semibold; }
+}
+
+/* Hiệu ứng chuyển cảnh mượt mà cho Dashboard */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
